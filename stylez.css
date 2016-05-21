@@ -1,0 +1,54 @@
+body {
+  font-family: serif;
+  background-color: #333;
+  color: beige;
+}
+
+h1 {
+  text-align: center;
+  margin: 0 auto;
+}
+
+
+#about {
+  background-image: url('sparkle-shorts.gif');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 40% 50%;
+  padding: 10px;
+  color: white;
+  text-shadow: 2px 2px 2px rgba(255, 30, 62, .9);
+}
+
+.option {
+  background-color: rgba(0,0,0,0);
+  color: #fff;
+  border: 2px dotted #fff;
+  border-radius: 10px;
+  padding: 6px;
+}
+
+#output span {
+  color: rgba(255, 30, 62, 0.9);
+}
+
+.body-bg {
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -999;
+  position: fixed;
+
+}
+
+.bg1 {
+  background-image: url('stars.gif');
+  opacity: .2;
+}
+
+.bg2 {
+  background-image: url('pants.gif');
+  opacity: .02;
+}

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+
+<meta name="keywords" content="knitting, knit, pants">
+<meta name="description" content="A knit pants pattern generator for pants knitters.">
+<meta name="author" content="Stephanie Mason">
+<meta charset="UTF-8">
+
+
+<title>👖 Knit Some Pants 👖</title>
+<link rel="stylesheet" href="stylez.css">
+<script src="scriptz.js"></script>
+<body>
+
+
+  <div id="about">
+    <h1 style="font-family:comic sans ms">👖👖👖 Knit Some Pants!!1 .com 👖👖👖</h1>
+    <h2> About </h2>
+    <p style="font-family:papyrus; font-size:1.5em;"> KnitSomePants.com is a free ***custom*** pants pattern generator for knitters<a href="#warning">*</a> </p>
+    <p align="right" style="margin-bottom: -8px"><small>IMPORTANT NOTE!!!: these (↗️) are not the pants that you will be knitting</small></p>
+  </div>
+
+  <h2> What kind of pants would you like to knit? </h2>
+  <div id="pantSelection">
+    <input class="length option" type="button" name="pants" value="pants pants" onClick="selectType('pants')">
+    <input class="length option" type="button" name="shorts" value="short pants" onClick="selectType('shorts')">
+    <input class="length option" type="button" name="undies" value="under pants" onClick="selectType('undies')">
+  </div>
+
+  <h2> How tight do you want your pants to be? </h2>
+  <div id="fitSelection">
+    <input class="fit option" type="button" name="loose" value="looser fitting" onClick="selectFit('loose')">
+    <input class="fit option" type="button" name="fit" value="fit but not too tight" onClick="selectFit('fit')">
+    <input class="fit option" type="button" name="tight" value="ass hugging AF" onClick="selectFit('tight')">
+  </div>
+
+  <h2> What kind of waist band would you like on your pants? </h2>
+  <div id="waistbandSelection">
+    <input class="waist option" type="button" name="Rib" value="high waist with ribbing" onClick="selectWaist('Rib')">
+    <input class="waist option" type="button" name="Turned" value="mid rise with an elastic or drawstring" onClick="selectWaist('Turned')">
+  </div>
+
+  <h2> How would you like to knit your pants? </h2>
+  <div id="methodSelection">
+    <input class="method option" type="button" name="topDown" value="from the top down" onClick="selectMethod('topDown')">
+    <input class="method option" type="button" name="bottomUp" value="from the bottom up" onClick="selectMethod('bottomUp')">
+    <input class="method option" type="button" name="pickRandom" value="I don't care" onClick="selectMethod('pickRandom')">
+  </div>
+
+
+  <h3 id="output">
+    Ok! You are gonna make some <span id="pantsFit">...</span> <span id="pantsType"></span> with a <span id="waistType">...</span> working from the <span id="pantsMethod">...</span>
+  </h3>
+  <p> They should look something like this: </p>
+
+  <h2> Gauge </h2>
+  <h3> A Necessary Evil for Good Pants</h3>
+  &nbsp;&nbsp;&nbsp;<input type="button" id="unitButton" name="unitSelect" value="Switch to metric units" onClick="switchUnits()">
+
+
+  <form name="gaugeForm">
+    <p> Your Gauge: </p>
+    <p><input type="text" name="stGauge"></input> sts per <span class="unitPrint">in</span>
+        <input type="text" name="rowGauge"></input> rows per <span class="unitPrint">in</span></p>
+        <input type="button" name="calculate" value="Give me a Pattern" OnClick="makePants(this.form)">
+  </form>
+
+
+
+
+
+
+<p>Cast on <span id="coSts"></span> stitches.</p>
+
+
+
+<p><a name="warning"><i>* If you would like to crochet pants then this pattern generator will probably
+  work for you as well but the author makes no gaurantees as to the comfort,
+  stylishness, or practicality of crocheted pants. Actually, there aren't any
+  guarantees for the knit pants on these points either. </i></a></p>
+<p> all content <a href="https://creativecommons.org/licenses/by/4.0/">(cc)</a> 2016 stephanie mason do whatever you want idc</p>
+
+
+<div class="body-bg bg1"></div>
+<div class="body-bg bg2"></div>
+</body>
+</html>

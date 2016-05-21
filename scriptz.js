@@ -51,6 +51,16 @@ function selectWaist(selection) {
   highlightButton(selection, "waist");
 }
 
+function selectCuff(selection) {
+  if(selection == "RibCuff") {
+    document.getElementById("cuffType").innerHTML = " ribbed ";
+  } else {
+    document.getElementById("cuffType").innerHTML = " hemmed ";
+  }
+
+  highlightButton(selection, "cuff");
+}
+
 function switchUnits() {
   var changes = document.getElementsByClassName("unitPrint");
 
@@ -63,7 +73,7 @@ function switchUnits() {
     var unitPrint = "in";
   }
 
-  document.getElementById("unitButton").value = "Switch to " + units + " units";
+  document.getElementById("unitButton").value = "switch to " + units + " units";
 
   for (i = 0; i < changes.length; i++) {
     changes[i].innerHTML = unitPrint;
@@ -81,6 +91,12 @@ function highlightButton(selection, type) {
       optionButtons[i].style.background = "rgba(0,0,0,0)";
     }
   }
+}
+
+function increment(id, amount) {
+  var currValue = document.getElementById(id).innerHTML;
+  if (currValue > 1 || amount > 0)
+    document.getElementById(id).innerHTML = parseInt(currValue) + amount;
 }
 
 

@@ -4,6 +4,10 @@ body {
   color: beige;
 }
 
+a {
+  color: rgba(255, 30, 62, .9);
+}
+
 h1 {
   text-align: center;
   margin: 0 auto;
@@ -28,8 +32,38 @@ h1 {
   padding: 6px;
 }
 
+.option:active {
+  background-color: rgba(255, 30, 62, 0.9);
+}
+
 #output span {
   color: rgba(255, 30, 62, 0.9);
+}
+
+.inputText {
+  background-color: beige;
+  border: none;
+  border-radius: 10px;
+  padding: 6px;
+  text-align: center;
+  font-family: comic sans ms;
+  font-weight: 600;
+}
+
+.inputText.gauge {
+  width: 20px;
+}
+
+#gaugeWidth {
+  color: rgba(255, 30, 62, .9);
+}
+
+#gaugeHeight {
+  color: rgba(255, 30, 62, .9);
+}
+
+#upStitchWidth, #downStitchWidth, #upRowHeight, #downRowHeight {
+  cursor: pointer;
 }
 
 .body-bg {

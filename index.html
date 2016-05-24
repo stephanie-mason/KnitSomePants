@@ -20,6 +20,18 @@
     <p align="right" style="margin-bottom: -8px"><small>IMPORTANT NOTE!!!: these (↗️) are not the pants that you will be knitting</small></p>
   </div>
 
+  <div id="pants-facts">
+    <p>Here are some "Pants Facts*"</p>
+    <ul>
+      <li>knitting is the original 3d printing</li>
+      <li>in the UK "pants" actually means "panties", but on this website we are referring to pants in the sense of trousers!</li>
+      <li>cavemen maybe wore pants</li>
+      <li>people who wear hand knitted clothing have been proven to be statistically significantly more dope human beings than people who don't wear hand knitted clothing. Furthermore, people who wear knitted pants (sometimes known as swants) have a 13.4% higher likelihood of being viewed by their peers as "crazy sick."</li>
+    </ul>
+
+    <p>*most of these facts are inaccurate at best and are actually mostly lies</p>
+  </div>
+
   <h2> What kind of pants would you like to knit? </h2>
   <div id="pantSelection">
     <input class="length option" type="button" name="pants" value="regular pants" onClick="selectType('pants')">
@@ -37,7 +49,7 @@
 
   <h2> What kind of waist band would you like on your pants? </h2>
   <div id="waistbandSelection">
-    <input class="waist option" type="button" name="Rib" value="ribbed wasit band" onClick="selectWaist('Rib')">
+    <input class="waist option" type="button" name="Rib" value="ribbed waist band" onClick="selectWaist('Rib')">
     <input class="waist option" type="button" name="Turned" value="plain with casing (for elastic or drawstring)" onClick="selectWaist('Turned')">
   </div>
 
@@ -59,17 +71,12 @@
     Ok! You are gonna make some <span id="pantsFit">...</span> <span id="pantsType"></span> with a <span id="waistType">...</span> and <span id="cuffType">...</span> cuffs working from the <span id="pantsMethod">...</span>
   </h3>
 
-  <!--
-  <p> They should look something like this: </p>
-  <img src="tight-pants.gif">
-  <p> JK those pants aren't even knit haha like the header those are just cool pants they actually should look something like this: </p>
-  -->
   <h2> Now it is time to enter some of your information so we can "customize your pants"™</h2>
   &nbsp;&nbsp;&nbsp;<input type="button" class="option" id="unitButton" name="unitSelect" value="switch to metric units" onClick="switchUnits()">
 
   <h3> Gauge - A Necessary Evil for Good Pants</h3>
   <form name="patternInputs" id="patternInputs">
-    <table>
+    <table class="center">
       <tr>
         <td></td>
         <td id="upStitchWidth" onClick="increment('gaugeWidth', 1)">⬆️</td>
@@ -96,29 +103,40 @@
       </tr>
     </table>
 
-    <h3> Your Measurements </h3>
-    <!-- option for entering pre-set measurements as well -->
+    <h3> Measurements </h3>
+    enter your own below, or select a generic size
 
-    <p>
-        <input type="button" name="calculate" value="generate pattern using our patented pants pattern propagation algorithm" OnClick="makePants(this.form)">
-    </p>
+    <table class="center">
+      <tr>
+        <td><img id="measurementDiagram" src="images/m_long.png" alt="diagram to assist with measurement collection"></td>
+        <td style="vertical-align: top;">
+          <ul id="measurementCollection" class="center">
+            <li>A. Waist circumference: <input class="measurement inputText" type="text" name="waistCirc"></input> <span class="unitPrint">in</span></li>
+            <li>B. Hips circumference:  <input class="measurement inputText" type="text" name="hipCirc"></input> <span class="unitPrint">in</span></li>
+            <li>C. Circumference at upper thigh: <input class="measurement inputText" type="text" name="thighCirc"></input> <span class="unitPrint">in</span></li>
+            <li class="shortOption">D. Circumference at knee: <input class="measurement inputText" type="text" name="kneeCirc"></input> <span class="unitPrint">in</span></li>
+            <li class="longOption">E. Circumference at cuff: <input class="measurement inputText" type="text" name="ankleCirc"></input> <span class="unitPrint">in</span></li>
+            <li>F. Crotch: <input class="measurement inputText" type="text" name="crotchLength"></input> <span class="unitPrint">in</span></li>
+            <li class="shortOption">G. Upper inseam: <input class="measurement inputText" type="text" name="upperInseam"></input> <span class="unitPrint">in</span></li>
+            <li class="longOption">H. Lower inseam: <input class="measurement inputText" type="text" name="lowerInseam"></input> <span class="unitPrint">in</span></li>
+          </ul>
+        </td>
+      </tr>
+    </table>
+
+    <div>
+          <p style="text-shadow: 1px 1px 2px aqua">generate pattern using our patented pants pattern propagation algorithm</p>
+          <img src="images/knitmoji.gif" alt="an animation of a smiley face emoji knitting a sweater">
+          <input type="button" id="calcButton" name="calculate" value="click here!" OnClick="makePants(this.form)">
+        <img src="images/knitmoji.gif" alt="the same animation of a smiley face emoji knitting a sweater as before">
+    </div>
   </form>
 
+  <img src="images/tight-pants.gif" alt="a zoom in on jennifer lopez's ass in tight white pants with a sparkle animation">
 
-
-
-
-
-
-<p>Cast on <span id="coSts"></span> stitches.</p>
-
-
-
-<p><a name="warning" style="color: white"><small><i>* If you would like to crochet pants then this pattern generator will probably
-  work for you as well but the author makes no gaurantees as to the comfort,
-  stylishness, or practicality of crocheted pants. Actually, there aren't any
-  guarantees for the knit pants on these points either. </i></small></a></p>
-<p> all content <a href="https://creativecommons.org/licenses/by/4.0/">(cc)</a> 2016 stephanie mason do whatever you want idec</p>
+<p><a name="warning" style="color: white"><small><i>* If you would like to crochet pants then this pattern generator will probably work for you as well but the author makes no gaurantees as to the fit, comfort, stylishness, or practicality of crocheted pants. Actually, there aren't any guarantees for the knit pants on these points either. </i></small></a></p>
+<p><img src="images/countholder.gif" alt="a magical unicorn counter"></p>  <!--http://cgi.boingdragon.com/count/itsstef/0-->
+<p> pants generator <a href="https://creativecommons.org/licenses/by/4.0/">(cc)</a> 2016 stephanie mason do whatever you want idec</p>
 
 
 <div class="body-bg bg1"></div>

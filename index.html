@@ -34,9 +34,9 @@
 
   <h2> What kind of pants would you like to knit? </h2>
   <div id="pantSelection">
-    <input class="length option" type="button" name="pants" value="regular pants" onClick="selectType('pants')">
-    <input class="length option" type="button" name="shorts" value="short pants" onClick="selectType('shorts')">
-    <input class="length option" type="button" name="undies" value="hot pants" onClick="selectType('undies')">
+    <input class="length option" type="button" name="regular" value="regular pants" onClick="selectType('regular')">
+    <input class="length option" type="button" name="short" value="short pants" onClick="selectType('short')">
+    <input class="length option" type="button" name="hot" value="hot pants" onClick="selectType('hot')">
   </div>
 
   <h2> How tight do you want your pants to be? </h2>
@@ -49,21 +49,21 @@
 
   <h2> What kind of waist band would you like on your pants? </h2>
   <div id="waistbandSelection">
-    <input class="waist option" type="button" name="Rib" value="ribbed waist band" onClick="selectWaist('Rib')">
-    <input class="waist option" type="button" name="Turned" value="plain with casing (for elastic or drawstring)" onClick="selectWaist('Turned')">
+    <input class="waist option" type="button" name="rib" value="ribbed waist band" onClick="selectWaist('rib')">
+    <input class="waist option" type="button" name="plain" value="plain with casing (for elastic or drawstring)" onClick="selectWaist('plain')">
   </div>
 
   <h2> What kind of cuffs would you like on your pant legs? </h2>
   <div id="waistbandSelection">
-    <input class="cuff option" type="button" name="RibCuff" value="ribbed" onClick="selectCuff('RibCuff')">
-    <input class="cuff option" type="button" name="Hem" value="hemmed" onClick="selectCuff('Hem')">
+    <input class="cuff option" type="button" name="rib" value="ribbed" onClick="selectCuff('rib')">
+    <input class="cuff option" type="button" name="plain" value="hemmed" onClick="selectCuff('plain')">
   </div>
 
   <h2> How would you like to knit your pants? </h2>
   <div id="methodSelection">
-    <input class="method option" type="button" name="topDown" value="from the top down" onClick="selectMethod('topDown')">
-    <input class="method option" type="button" name="bottomUp" value="from the bottom up" onClick="selectMethod('bottomUp')">
-    <input class="method option" type="button" name="pickRandom" value="I don't care" onClick="selectMethod('pickRandom')">
+    <input class="method option" type="button" name="td" value="from the top down" onClick="selectMethod('td')">
+    <input class="method option" type="button" name="bu" value="from the bottom up" onClick="selectMethod('bu')">
+    <input class="method option" type="button" name="pick" value="I don't care" onClick="selectMethod('pick')">
   </div>
 
 
@@ -108,17 +108,17 @@
 
     <table class="center">
       <tr>
-        <td><img id="measurementDiagram" src="images/m_long.png" alt="diagram to assist with measurement collection"></td>
+        <td><img id="measurementDiagram" src="images/m_regular.png" alt="diagram to assist with measurement collection"></td>
         <td style="vertical-align: top;">
           <ul id="measurementCollection" class="center">
             <li>A. Waist circumference: <input class="measurement inputText" type="text" name="waistCirc"></input> <span class="unitPrint">in</span></li>
             <li>B. Hips circumference:  <input class="measurement inputText" type="text" name="hipCirc"></input> <span class="unitPrint">in</span></li>
             <li>C. Circumference at upper thigh: <input class="measurement inputText" type="text" name="thighCirc"></input> <span class="unitPrint">in</span></li>
             <li class="shortOption">D. Circumference at knee: <input class="measurement inputText" type="text" name="kneeCirc"></input> <span class="unitPrint">in</span></li>
-            <li class="longOption">E. Circumference at cuff: <input class="measurement inputText" type="text" name="ankleCirc"></input> <span class="unitPrint">in</span></li>
+            <li class="regularOption">E. Circumference at cuff: <input class="measurement inputText" type="text" name="ankleCirc"></input> <span class="unitPrint">in</span></li>
             <li>F. Crotch: <input class="measurement inputText" type="text" name="crotchLength"></input> <span class="unitPrint">in</span></li>
             <li class="shortOption">G. Upper inseam: <input class="measurement inputText" type="text" name="upperInseam"></input> <span class="unitPrint">in</span></li>
-            <li class="longOption">H. Lower inseam: <input class="measurement inputText" type="text" name="lowerInseam"></input> <span class="unitPrint">in</span></li>
+            <li class="regularOption">H. Lower inseam: <input class="measurement inputText" type="text" name="lowerInseam"></input> <span class="unitPrint">in</span></li>
           </ul>
         </td>
       </tr>
